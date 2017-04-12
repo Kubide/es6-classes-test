@@ -8,3 +8,8 @@ const person = new Person();
 debug("person Object:", person);
 debug("typeof Object:", typeof person );
 debug("person is an instance of the class Person?", person instanceof Person);
+
+
+const paco = new Person('Paco', 'Hernandez', 30, '1234K');
+debug("paco Object:", paco);
+
