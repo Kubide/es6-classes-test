@@ -18,6 +18,13 @@ class Person {
     // return this.surname === person.surname;
   }
 
+  get(param) {
+    return this.param;
+  }
+
+  getThis() {
+    return this;
+  }
 
   static areParents(personA, personB) {
     return personA.surname === personB.surname;

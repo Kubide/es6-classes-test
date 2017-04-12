@@ -18,11 +18,18 @@ debug('paco Object:', paco);
 debug('paco name and surname:', `${paco.name} ${paco.surname}`);
 debug('paco name and surname method:', paco.fullName());
 
+const antonio = new Person('Antonio', 'Hernandez');
+
+// Ejemplos de this
+debug('General this', this);
+debug('Paco\'s this', paco.getThis());
+debug('Antonio\'s this', antonio.getThis());
+
 
 // Si dos personas son familiares.
 // De forma dinámica
-const antonio = new Person('Antonio', 'Hernandez');
 debug('Is Antonio a parent of Paco?', paco.isParent(antonio));
 
 // De forma estática
 debug('Are Antonio and Paco parents?', Person.areParents(antonio, paco));
+
