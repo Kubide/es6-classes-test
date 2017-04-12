@@ -12,6 +12,34 @@ class Policeman extends Person {
     return `Sir Policeman: ${fullname}`;
   }
 
+  static carControl(car, policeman) {
+    if (!car.canDrive()) {
+      return 'your car is so old';
+    }
+
+    if (!car.hasDriver()) {
+      return 'said: ok google!';
+    }
+
+    if (!car.driver.driverLicense) {
+      return 'you can\'t drive without license';
+    }
+
+    if (!car.driver.driverLicense.validLicense()) {
+      return 'your driverLicense has expired';
+    }
+
+    if (!(policeman instanceof Policeman)) {
+      return 'throw a new swindle';
+    }
+
+    if (policeman.isParent(car.driver)) {
+      return 'talk with another policeman, please';
+    }
+
+    return 'ok, can drive';
+  }
+
 }
 
 module.exports = Policeman;

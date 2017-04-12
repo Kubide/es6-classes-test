@@ -6,6 +6,10 @@ class DriverLicense {
     this.year = new Date().getFullYear() + years;
   }
 
+  validLicense() {
+    return this.year >= new Date().getFullYear();
+  }
+
   renewLicense(appovedExams) {
     if (appovedExams === true) {
       this.year += years;

@@ -68,3 +68,8 @@ debug('Check if Paco has the driverLicense', paco.driverLicense);
 debug('Give the driverLicense to Paco', paco.addDriverLicense(driverLicense));
 debug('Check if Paco has the driverLicense', paco.driverLicense);
 debug('Check Paco', paco);
+debug('Circular reference:', paco.driverLicense.driver.driverLicense);
+
+
+// Control de policia
+debug('car control:', Policeman.carControl(kiaCarens, angel));
