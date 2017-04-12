@@ -1,0 +1,19 @@
+{
+  "name": "es6-classes-test",
+  "version": "1.0.0",
+  "description": "A quick kata to improve and well-know Classes on ES6.",
+  "scripts": {
+    "start": "export DEBUG=es6-classes* && ./node_modules/.bin/nodemon --inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kubide/es6-classes-test.git"
+  },
+  "author": "Kubide <hi@kubide.es> (https://kubide.es)",
+  "license": "ISC",
+  "homepage": "https://github.com/Kubide/es6-classes-test.git",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "nodemon": "^1.11.0"
+  }
+}
