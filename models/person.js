@@ -19,7 +19,8 @@ class Person {
   }
 
   get(param) {
-    return this.param;
+    // paco['names']['firstName'] === paco.names.firstName
+    return this[param];
   }
 
   getThis() {

@@ -25,6 +25,10 @@ debug('General this', this);
 debug('Paco\'s this', paco.getThis());
 debug('Antonio\'s this', antonio.getThis());
 
+// Ejemplos de parámetros dinámicos
+debug('Get paco\'s name property', paco.name);
+debug('Get paco\'s name by method', paco.get('name'));
+
 
 // Si dos personas son familiares.
 // De forma dinámica
