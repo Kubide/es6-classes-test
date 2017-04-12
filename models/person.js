@@ -12,7 +12,10 @@ class Person {
   }
 
   isParent(person) {
-    return this.surname === person.surname;
+    const personA = this; // personA == paco;
+    const personB = person; // personB == antonio;
+    return Person.areParents(personA, personB);
+    // return this.surname === person.surname;
   }
 
 

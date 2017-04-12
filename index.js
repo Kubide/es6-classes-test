@@ -7,7 +7,7 @@ debug('Person Class:', Person);
 
 const person = new Person();
 debug('person Object:', person);
-debug('typeof Object:', typeof person );
+debug('typeof Object:', typeof person);
 debug('person is an instance of the class Person?', person instanceof Person);
 
 
@@ -25,4 +25,4 @@ const antonio = new Person('Antonio', 'Hernandez');
 debug('Is Antonio a parent of Paco?', paco.isParent(antonio));
 
 // De forma estática
-Person.areParents(antonio, paco);
+debug('Are Antonio and Paco parents?', Person.areParents(antonio, paco));
