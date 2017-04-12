@@ -19,4 +19,10 @@ debug('paco name and surname:', `${paco.name} ${paco.surname}`);
 debug('paco name and surname method:', paco.fullName());
 
 
-//
+// Si dos personas son familiares.
+// De forma dinámica
+const antonio = new Person('Antonio', 'Hernandez');
+debug('Is Antonio a parent of Paco?', paco.isParent(antonio));
+
+// De forma estática
+Person.areParents(antonio, paco);

@@ -11,6 +11,15 @@ class Person {
     return `${this.name} ${this.surname}`;
   }
 
+  isParent(person) {
+    return this.surname === person.surname;
+  }
+
+
+  static areParents(personA, personB) {
+    return personA.surname === personB.surname;
+  }
+
 }
 
 module.exports = Person;
