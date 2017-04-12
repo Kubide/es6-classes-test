@@ -7,6 +7,10 @@ class Person {
     this.profession = profession;
   }
 
+  fullName() {
+    return `${this.name} ${this.surname}`;
+  }
+
 }
 
 module.exports = Person;
