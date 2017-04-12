@@ -2,6 +2,8 @@ const debug = require('debug')('es6-classes:main');
 
 const Person = require('./models/person.js');
 const Policeman = require('./models/policeman.js');
+const Car = require('./models/car.js');
+const DriverLicense = require('./models/driverLicense.js');
 
 // Crear una clase Person que tenga: nombre y apellidos, edad, DNI, profesion
 debug('Person Class:', Person);
@@ -48,3 +50,21 @@ debug('person is an instance of the class Person?', angel instanceof Policeman);
 
 
 debug('angel name and surname method:', angel.fullName());
+
+// I buy a new car
+const kiaCarens = new Car();
+debug('car Object:', kiaCarens);
+debug('can Drive?:', kiaCarens.canDrive());
+debug('has Driver?:', kiaCarens.hasDriver());
+debug('Add a new driver:', kiaCarens.newDriver(paco));
+debug('has Driver?:', kiaCarens.hasDriver());
+
+
+// New DriverLicense
+const driverLicense = new DriverLicense(paco);
+debug('driverLicense', driverLicense);
+debug('driverLicense renewlicense', driverLicense.renewLicense(true));
+debug('Check if Paco has the driverLicense', paco.driverLicense);
+debug('Give the driverLicense to Paco', paco.addDriverLicense(driverLicense));
+debug('Check if Paco has the driverLicense', paco.driverLicense);
+debug('Check Paco', paco);
