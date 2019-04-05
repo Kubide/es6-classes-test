@@ -1,3 +1,3 @@
-A quick kata to improve and well-know Classes on ES6.
+## Support
 
-This kata doesn't have description. If you want to know what are we done, the best approach could be read all commits to understand better and reproduce step by step the Kata.
+[Kubide](https://kubide.io/) continues code maintenance [here](https://gitlab.com/kubide-rocks/es6-classes-test).
